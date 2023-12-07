@@ -6,7 +6,7 @@ from dateutil import parser
 # Load data from CSV
 #read_file = pd.read_excel("wubby on time percentage.xlsx")
 
-st.write("Hello, World!")
+"Hello, World!"
 # Write the dataframe object 
 # into csv file 
 #read_file.to_csv("/var/app/wubbyontimepercentage.csv",  
