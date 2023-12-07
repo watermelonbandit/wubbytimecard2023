@@ -4,7 +4,7 @@ from datetime import datetime
 from dateutil import parser
 
 # Load data from CSV
-read_file = pd.read_excel("/var/app/wontime.xlsx")
+read_file = pd.read_excel("wontime.xlsx")
 
 
 # Write the dataframe object 
@@ -46,7 +46,6 @@ page = st.sidebar.radio("Go to", ["Overall Statistics","Pick a Stream"])
     #st.write("### Actual (AT):")
     #actual_time = last_row['at']
     #st.write(f'<p style="font-size:30px;">{actual_time}</p>', unsafe_allow_html=True)
-
     #st.write("### Time Late (TL):")
     #time_late = last_row['tl']
     #tl_color = 'green' if time_late == '0:00' else ('yellow' if '0:01' <= time_late <= '0:05' else 'red')
