@@ -136,6 +136,3 @@ st.write("Hello, World!")
     #st.write("*The NG (No Gold) collumn was ommitted because cases just stopped being opened on a daily baises*")
     #st.write("*The ST (Stunlocked) collumn was ommitted because it became a every stream occurance (just a stream counter, lol)*")
     #st.write("*RD (reddit mention) collumn was omitted because i just stopped tracking it for some reason")
-
-if __name__ == '__main__':
-    main()
