@@ -107,6 +107,10 @@ elif page == "Overall Statistics":
     mic_airborne = int(round(df['MA'].sum(),0))
     st.write(f"### Number of times the mic has fallen: {mic_airborne}")
 
+    banned_streams = int(round(df['B'].sum(),0))
+    st.write(f"### Number of banned streams (thanks wubby really i wasnt planning on having a catagory for this): {banned_streams}")
+
+
     total_streams = len(df['d'].dt.date.unique())
     st.write(f"### Total number of tracked streams: {total_streams}")
 
