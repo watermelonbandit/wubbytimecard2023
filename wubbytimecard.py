@@ -13,7 +13,8 @@ read_file.to_csv("/var/app/wubbyontimepercentage.csv",
                 index = None, 
                 header=True) 
     
-df = pd.DataFrame(pd.read_csv("wubbyontimepercentage.csv")) 
+df = pd.DataFrame(pd.read_csv("/var/app/wubbyontimepercentage.csv"))
+ 
 # Custom function to parse dates
 def custom_date_parser(date_str):
     try:
