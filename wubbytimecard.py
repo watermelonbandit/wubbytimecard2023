@@ -102,7 +102,7 @@ elif page == "Overall Statistics":
     st.write(f"### Number of streams early: {early_streams}")
 
     al_being_called_bitch = int(round(df['AB'].sum(), 0))
-    st.write(f"### Number of times Allux got called a bitch (on stream): {al_being_called_bitch}")
+    st.write(f"### Number of times Alluux got called a bitch (on stream): {al_being_called_bitch}")
     
 
     mic_airborne = int(round(df['MA'].sum(),0))
@@ -129,7 +129,7 @@ elif page == "Overall Statistics":
     st.line_chart(scatter_df.set_index('d'))
 
     #allux bitch graph
-    st.write("### Allux being called a bitch over time:")
+    st.write("### Alluux being called a bitch over time:")
     filtered_df = df[['d', 'AB']].fillna(0)
     st.line_chart(filtered_df.set_index('d'))
 
