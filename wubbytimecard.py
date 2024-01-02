@@ -115,7 +115,7 @@ elif page == "Overall Statistics":
     st.write(f"### Number of banned streams (thanks wubby really i wasnt planning on having a catagory for this): {banned_streams}")
 
 
-    total_streams = banned_streams + on_time_streams + early_streams + late_streams
+    total_streams = len(df['d'].dt.date.unique())
     st.write(f"### Total number of tracked streams: {total_streams}")
 
     st.write("# Graphs")
