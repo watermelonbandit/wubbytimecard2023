@@ -101,6 +101,9 @@ elif page == "Overall Statistics":
     early_streams = df[df['TE'] > '00:00:00'].shape[0]
     st.write(f"### Number of streams early: {early_streams}")
 
+    on_time_streams = df[df['tl'] == '00:00:00'].shape[0]
+    st.write(f"### Number of streams on time: {on_time_streams}")
+
     al_being_called_bitch = int(round(df['AB'].sum(), 0))
     st.write(f"### Number of times Alluux got called a bitch (on stream): {al_being_called_bitch}")
     
